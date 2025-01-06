@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Edgine
+namespace Engine
 {
-    public class LivingCreature    //基类
+    public class LivingCreature//基类
     {
-       public int CurrentHitPoints { get; set; }
-       public int MaximumHitPoints { get; set; }
-       public LivingCreature(int currentHitPoints, int maximumHitPoints)
-       {
-           CurrentHitPoints = currentHitPoints;
-           MaximumHitPoints = maximumHitPoints;
-       }
+        public int CurrentHitPoints { get; set; }
+        public int MaximumHitPoints { get; set; }
 
+        public LivingCreature(int currentHitPoints, int maximumHitPoints)
+        {
+            CurrentHitPoints = currentHitPoints;
+            MaximumHitPoints = maximumHitPoints;
+        }
     }
 }

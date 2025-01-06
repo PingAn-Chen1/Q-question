@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Edgine
+namespace Engine
 {
-   public class Monster:LivingCreature //派生类
+    public class Monster : LivingCreature
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -15,7 +15,7 @@ namespace Edgine
         public int RewardGold { get; set; }
 
         public Monster(int id, string name, int maximumDamage, int rewardExperiencePoints, int rewardGold, int currentHitPoints, int maximumHitPoints)
-            : base(currentHitPoints, maximumHitPoints)
+            : base(currentHitPoints, maximumHitPoints)//LivingCreature的派生类
         {
             ID = id;
             Name = name;

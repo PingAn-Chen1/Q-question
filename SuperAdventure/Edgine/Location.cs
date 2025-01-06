@@ -14,7 +14,7 @@ namespace Edgine
 
 
 
-       public Location(int id, string name, string description)
+       public Location(int id, string name, string description)//构造函数
        {
            ID = id;
            Name = name;
