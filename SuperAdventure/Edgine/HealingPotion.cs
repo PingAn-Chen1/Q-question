@@ -11,7 +11,7 @@ namespace Engine
         public int AmountToHeal { get; set; }
 
         public HealingPotion(int id, string name, string namePlural, int amountToHeal)
-            : base(id, name, namePlural)
+            : base(id, name, namePlural)//Item派生类
         {
             AmountToHeal = amountToHeal;
         }

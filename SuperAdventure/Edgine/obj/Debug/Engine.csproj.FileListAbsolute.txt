@@ -1,0 +1,5 @@
+C:\Users\22411\documents\visual studio 2013\Projects\SuperAdventure\Edgine\bin\Debug\Engine.dll
+C:\Users\22411\documents\visual studio 2013\Projects\SuperAdventure\Edgine\bin\Debug\Engine.pdb
+C:\Users\22411\documents\visual studio 2013\Projects\SuperAdventure\Edgine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+C:\Users\22411\documents\visual studio 2013\Projects\SuperAdventure\Edgine\obj\Debug\Engine.dll
+C:\Users\22411\documents\visual studio 2013\Projects\SuperAdventure\Edgine\obj\Debug\Engine.pdb
