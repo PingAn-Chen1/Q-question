@@ -20,12 +20,17 @@ namespace SuperAdventure
         {
             InitializeComponent();
 
-            _player = new Player(10, 10, 20, 0, 1);//含参数构造函数，初始化的时候就带着 值
+            _player = new Player(10, 10, 20, 0, 1);//含参数构造函数，初始化的时候就带着值   (当前血量，最大血量，金币，经验，等级)
 
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             lblGold.Text = _player.Gold.ToString();
             lblExperience.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

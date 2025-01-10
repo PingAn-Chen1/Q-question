@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public static class World
+    public static class World          //静态类
     {
         public static readonly List<Item> Items = new List<Item>();//第11 - 14行：静态列表变量。它们的工作原理类似于类中的属性。
         public static readonly List<Monster> Monsters = new List<Monster>();//我们将用游戏世界中的所有东西填充它们，然后在代码的其余部分中读取它们。
@@ -41,7 +41,7 @@ namespace Engine
         public const int LOCATION_ID_BRIDGE = 8;
         public const int LOCATION_ID_SPIDER_FIELD = 9;
 
-        static World()                  //第44 - 50行：这是静态构造函数。
+        static World()                  //第44 - 50行：这是静态构造函数。静态类
         {
             PopulateItems();
             PopulateMonsters();
@@ -49,7 +49,7 @@ namespace Engine
             PopulateLocations();
         }
 
-        private static void PopulateItems()
+        private static void PopulateItems()//私有类
         {
             Items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));//第52 - 173行：这些是我们用来创建游戏对象并将它们添加到静态列表的方法。
             Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails"));
@@ -77,7 +77,7 @@ namespace Engine
             giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_FANG), 75, true));
             giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
 
-            Monsters.Add(rat);
+            Monsters.Add(rat);//将rat变量添加到静态Monsters列表中
             Monsters.Add(snake);
             Monsters.Add(giantSpider);
         }
@@ -172,9 +172,9 @@ namespace Engine
             Locations.Add(spiderField);
         }
 
-        public static Item ItemByID(int id)//第175 - 225行：我们可以调用这些方法从静态列表中获取值。
-        {                                   //我们可以从第7行到第10行直接访问列表，因为它们是公共的。但是这些“包装器”方法使我们想要做的事情更清楚一些。
-            foreach (Item item in Items)
+        public static Item ItemByID(int id) //第175 - 225行：我们可以调用这些方法从静态列表中获取值。
+        {                                   //我们可以从第7行到第10行直接访问列表，因为它们是公共的。
+            foreach (Item item in Items)    //但是这些“包装器”方法使我们想要做的事情更清楚一些。
             {
                 if (item.ID == id)
                 {
