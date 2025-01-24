@@ -32,5 +32,10 @@ namespace SuperAdventure
         {
 
         }
+
+        private void btnNorth_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
